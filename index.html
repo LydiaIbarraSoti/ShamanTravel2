@@ -71,7 +71,7 @@
          <video autoplay="" muted="" loop="">
            <source src="assets/img/travel/SHAMAN TRAVEL.mp4" type="video/mp4">                
         </video> 
-          <!-- <img src="assets/img/travel/logo1_1.png" alt="" data-aos="fade-in" >   -->
+         
         <div class="hero-overlay"></div>
       </div>
 
@@ -135,7 +135,7 @@
                     <div class="col-md-6">
                       <div class="form-group mb-3">
                         <label for="adultos">* Adultos</label>
-                         <input type="number" id="adultos" name="adultos" placeholder="* Adultos " min="1" class="form-select" required>
+                         <input type="text" id="adultos" name="adultos" placeholder="* Adultos " min="1" class="form-text" required>
                         
                       </div>
                     </div>
@@ -143,30 +143,34 @@
                     <div class="col-md-6">
                       <div class="form-group mb-3">
                         <label for="menores">Menores</label>
-                        <input type="number" id="menores" name="menores" placeholder="Menores" class="form-select" min="0">                        
+                        <input type="text" id="menores" name="menores" placeholder="Menores" class="form-text" min="0">                        
                       </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="tipo">* Tipo de paquete</label>
+                      <select name="tipo" id="tipo" class="form-select" required="">
+                        <option value="">Selecciona el paquete</option>
+                        <option value="Todo Incluido">Todo Incluido</option>
+                        <option value="Plan Europeo">Plan Europeo</option>
+                        <option value="Ambos">Ambos</option>
+                        <option value="Solo Hospedaje">Solo Hospedaje</option>
+                        <option value="Solo Transporte">Solo Transporte</option>
+                      </select>
                     </div>
 
                      <div class="col-md-6">
                       <div class="form-group mb-3">
                         <label for="edades">Edades Menores</label>
-                        <input type="text" id="edades" name="edades" placeholder="Edades de Menores (Ej: 5, 10) " class="form-text">                        
+                        <input type="text" id="edades" name="edades" placeholder="(Ej: 5, 10) " class="form-text">                        
                       </div>
                     </div>
 
+                    
+
                   </div>
 
-                  <div class="form-group mb-3">
-                    <label for="tipo">* Tipo de paquete</label>
-                    <select name="tipo" id="tipo" class="form-select" required="">
-                      <option value="">Selecciona el tipo de paquete</option>
-                      <option value="Todo Incluido">Todo Incluido</option>
-                      <option value="Plan Europeo">Plan Europeo</option>
-                      <option value="Ambos">Ambos</option>
-                      <option value="Solo Hospedaje">Solo Hospedaje</option>
-                      <option value="Solo Transporte">Solo Transporte</option>
-                    </select>
-                  </div>
+                 
 
                   <div class="form-group mb-3">
                      <label for="comentarios">Comentarios</label>

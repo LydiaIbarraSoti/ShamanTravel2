@@ -828,11 +828,11 @@ section,
   
 }
 
-/* .travel-hero .hero-background video {
+.travel-hero .hero-background video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+}
 
 .travel-hero .hero-overlay {
   position: absolute;
