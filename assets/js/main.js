@@ -178,3 +178,48 @@
   });
 
 })();
+
+// BOTON PARA MANDAR COTIZAION POR WHATSAPP
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('formCotizacion').addEventListener('submit', function (e) {
+    e.preventDefault();    
+
+    const nombres = {
+      mazatlan: "Mazatlán",
+      cancun: "Cancún",
+      loscabos: "Los Cabos",
+      vallarta: "Vallarta"
+    };
+    const nombre = document.getElementById('nombre').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const destino = document.getElementById('destino').value;
+    const tipo = document.getElementById('tipo').value;
+    const adultos = document.getElementById('adultos').value;
+    const menores = document.getElementById('menores').value || 0;
+    const edades = document.getElementById('edades').value.trim();
+    const fechaSalida = document.getElementById('fechaSalida').value;
+    const fechaRegreso = document.getElementById('fechaRegreso').value;
+    const comentarios = document.getElementById('comentarios').value.trim();
+
+    if (!nombre || !telefono || !destino || !tipo || !adultos || !fechaSalida || !fechaRegreso) {
+      alert("Por favor completa todos los campos obligatorios.");
+      return;
+    }
+
+    let mensaje = `¡Hola! Soy ${nombre}, mi teléfono es ${telefono}. Deseo cotizar un viaje a ${nombres[destino]}.\n\n`;
+    mensaje += `- Tipo de paquete: ${tipo}\n- Adultos: ${adultos}`;
+
+    if (parseInt(menores) > 0) {
+      mensaje += `\n- Menores: ${menores}`;
+      if (edades) mensaje += ` (Edades: ${edades})`;
+    }
+
+    mensaje += `\n- Fecha de salida: ${fechaSalida}\n- Fecha de regreso: ${fechaRegreso}`;
+
+    if (comentarios) mensaje += `\n- Comentarios: ${comentarios}`;
+
+    const numeroWhatsApp = "5218712196060"; // ← tu número
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+  });
+});
