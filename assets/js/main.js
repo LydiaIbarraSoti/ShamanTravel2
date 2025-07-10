@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mazatlan: "Mazatlán",
       cancun: "Cancún",
       loscabos: "Los Cabos",
-      vallarta: "Vallarta"
+      vallarta: "Puerto Vallarta"
     };
     const nombre = document.getElementById('nombre').value.trim();
     const telefono = document.getElementById('telefono').value.trim();
