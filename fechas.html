@@ -25,6 +25,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"> -->
+
+
 
   <!-- =======================================================
   * Template Name: Tour
@@ -82,153 +85,163 @@
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Travel Destinations Section -->
-    <section id="travel-destinations" class="travel-destinations section">
+     <!-- Gallery Section -->
+     <section id="gallery" class="gallery section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 style="font-size: 2.5rem; color: #f07955;">Paquetes disponibles</h2>
           </div>
         </div>
 
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="destination-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-            <li data-filter="*" class="filter-active">Todas las fechas</li>
-            <li data-filter=".filter-julio">Julio</li>
-            <li data-filter=".filter-agosto">Agosto</li>
+          <ul class="gallery-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">Todas</li>
+            <!-- <li data-filter=".filter-cabos">Los Cabos</li>
+            <li data-filter=".filter-vallarta">Puerto Vallarta</li>            
+            <li data-filter=".filter-cancun">Cancun</li> -->
+            <!-- <li data-filter=".filter-julio">Julio</li>
+            <li data-filter=".filter-agosto">Agosto</li> -->
             <li data-filter=".filter-vallarta">Vallarta</li>
             <li data-filter=".filter-cabos">Los Cabos</li>
             <li data-filter=".filter-cancun">Cancún</li>
-            <!-- <li data-filter=".filter-septiembre">Septiembre</li>
-            <li data-filter=".filter-octubre">Octubre</li>
-            <li data-filter=".filter-noviembre">Noviembre</li> -->
-          </ul><!-- End Destination Filters -->
+            <li data-filter=".filter-mazatlan">Mazatlan</li>
+            <li data-filter=".filter-colombia">Colombia</li>
+          </ul>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gallery-grid isotope-container" data-aos="fade-up" data-aos-delay="300">
 
-            <div class="col-lg-4 col-md-6 destination-item isotope-item filter-agosto">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/01-03-AGO.png" alt="Maldives" class="img-fluid" loading="lazy">                  
+            
+            <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-vallarta">
+              <div class="gallery-card">
+                <div class="gallery-image">
+                  <img src="assets/img/fechas/fechas_vallarta.jpg" class="img-fluid" alt="">
                 </div>
-              </a>              
-            </div><!-- End Destination Item -->
-             <div class="col-lg-4 col-md-6 destination-item isotope-item filter-agosto">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/08-10-AGO.png" alt="Maldives" class="img-fluid" loading="lazy">                  
-                </div>
-              </a>              
-            </div><!-- End Destination Item -->
-            <div class="col-lg-4 col-md-6 destination-item isotope-item filter-julio">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/4-6-JULIO.png" alt="Maldives" class="img-fluid" loading="lazy">                  
-                </div>
-              </a>              
-            </div><!-- End Destination Item -->
-             <div class="col-lg-4 col-md-6 destination-item isotope-item filter-julio">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/11-13-JULIO.png" alt="Maldives" class="img-fluid" loading="lazy">                  
-                </div>
-              </a>              
-            </div><!-- End Destination Item -->
-             <div class="col-lg-4 col-md-6 destination-item isotope-item filter-julio">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/17-20-JULIO.png" alt="Maldives" class="img-fluid" loading="lazy">                  
-                </div>
-              </a>              
-            </div><!-- End Destination Item -->
-             <div class="col-lg-4 col-md-6 destination-item isotope-item filter-julio">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/18-20-JULIO.png" alt="Maldives" class="img-fluid" loading="lazy">                  
-                </div>
-              </a>              
-            </div><!-- End Destination Item -->
-             <div class="col-lg-4 col-md-6 destination-item isotope-item filter-julio">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/24-27-JULIO.png" alt="Maldives" class="img-fluid" loading="lazy">                  
-                </div>
-              </a>              
-            </div><!-- End Destination Item -->
-             <div class="col-lg-4 col-md-6 destination-item isotope-item filter-julio">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/31-JULIO-03-AGO.png" alt="Maldives" class="img-fluid" loading="lazy">                  
-                </div>
-              </a>              
-            </div><!-- End Destination Item -->
-            <div class="col-lg-4 col-md-6 destination-item isotope-item filter-vallarta">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/fechas_vallarta.jpg" alt="Maldives" class="img-fluid" loading="lazy">                  
-                </div>
-              </a>              
-            </div><!-- End Destination Item -->
-             <div class="col-lg-4 col-md-6 destination-item isotope-item filter-cabos">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/los cabos.png" alt="Maldives" class="img-fluid" loading="lazy">                  
-                </div>
-              </a>              
-            </div><!-- End Destination Item -->
-             <div class="col-lg-4 col-md-6 destination-item isotope-item filter-cancun">              
-              <a  class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/fechas/cancun.png" alt="Maldives" class="img-fluid" loading="lazy">                  
-                </div>
-              </a>              
-            </div><!-- End Destination Item -->
-             
-
-            <!-- ORIGINAL  -->
-            <!-- <div class="col-lg-4 col-md-6 destination-item isotope-item filter-urban">
-              <a href="destination-details.html" class="destination-tile">
-                <div class="tile-image">
-                  <img src="assets/img/travel/destination-20.webp" alt="Singapore" class="img-fluid" loading="lazy">
-                  <div class="overlay-content">
-                    <span class="destination-tag family">Family-Friendly</span>
-                    <div class="destination-info">
-                      <h4>Singapore</h4>
-                      <p>A modern garden city, celebrated for its bold architecture and diverse culinary scene.</p>
-                      <div class="destination-stats">
-                        <span class="tours-available"><i class="bi bi-map"></i> 17 Adventures</span>
-                        <span class="starting-price">From $1,399</span>
-                      </div>
-                    </div>
+                <div class="gallery-overlay">
+                  <!-- <h4>Vamar Vallarta</h4> -->
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                  <div class="gallery-actions">
+                    <a href="assets/img/fechas/fechas_vallarta.jpg" title="" class="glightbox"><i class="bi bi-eye"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
                   </div>
-                </div>
-              </a>
-            </div> -->
-
-          </div><!-- End Destinations Container -->
-
-        </div>
-
-        <!-- <div class="row mt-5">
-          <div class="col-lg-10 mx-auto text-center" data-aos="fade-up" data-aos-delay="400">
-            <div class="planning-assistance">
-              <div class="assistance-content">
-                <h3>Let Our Team Help Curate Your Perfect Expedition</h3>
-                <p>Unsure which destination aligns with your travel aspirations? Our seasoned travel advisors are poised to design a bespoke itinerary tailored just for you.</p>
-                <div class="assistance-actions">
-                  <a href="#" class="btn btn-primary">Receive Complimentary Consultation</a>
-                  <a href="#" class="btn btn-outline">Explore All Available Tours</a>
                 </div>
               </div>
             </div>
+                        <!-- LOS CABOS -->
+            <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-cabos">
+              <div class="gallery-card">
+                <div class="gallery-image">
+                  <img src="assets/img/fechas/cabos_2026.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="gallery-overlay">
+                  <!-- <h4>Hotel posada real</h4> -->
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                  <div class="gallery-actions">
+                    <a href="assets/img/fechas/cabos_2026.jpg" title="" class="glightbox"><i class="bi bi-eye"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-cabos">
+              <div class="gallery-card">
+                <div class="gallery-image">
+                  <img src="assets/img/fechas/los cabos.png" class="img-fluid" alt="">
+                </div>
+                <div class="gallery-overlay">
+                  <!-- <h4>Hotel Solmar Resort</h4> -->
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                  <div class="gallery-actions">
+                    <a href="assets/img/fechas/los cabos.png" title="" class="glightbox"><i class="bi bi-eye"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             
+                        <!--  CANCUN -->
+              <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-cancun">
+              <div class="gallery-card">
+                <div class="gallery-image">
+                  <img src="assets/img/fechas/cancun.png" class="img-fluid" alt="">
+                </div>
+                <div class="gallery-overlay">
+                  
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                  <div class="gallery-actions">
+                    <a href="assets/img/fechas/cancun.png" title="" class="glightbox"><i class="bi bi-eye"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-cancun">
+              <div class="gallery-card">
+                <div class="gallery-image">
+                  <img src="assets/img/fechas/cancun_2026.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="gallery-overlay">
+                  
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                  <div class="gallery-actions">
+                    <a href="assets/img/fechas/cancun_2026.jpg" title="" class="glightbox"><i class="bi bi-eye"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-mazatlan">
+              <div class="gallery-card">
+                <div class="gallery-image">
+                  <img src="assets/img/fechas/mazatlan_2026.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="gallery-overlay">
+                  
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                  <div class="gallery-actions">
+                    <a href="assets/img/fechas/mazatlan_2026.jpg" title="" class="glightbox"><i class="bi bi-eye"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-colombia">
+              <div class="gallery-card">
+                <div class="gallery-image">
+                  <img src="assets/img/fechas/colombia_2026.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="gallery-overlay">
+                  
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                  <div class="gallery-actions">
+                    <a href="assets/img/fechas/colombia_2026.jpg" title="" class="glightbox"><i class="bi bi-eye"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div> -->
+          
+        </div>
 
       </div>
 
-    </section><!-- /Travel Destinations Section -->
+    </section> 
+    <!-- /Gallery Section -->
+
+
+
 
   </main>
 
@@ -265,6 +278,14 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> -->
+
+  
+      <!-- <div id="imageModal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content-img" id="modalImage" alt="Imagen ampliada">
+      </div> -->
+
 
 </body>
 

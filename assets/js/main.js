@@ -222,4 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
   });
+
+
+  
+
 });
