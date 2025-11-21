@@ -108,10 +108,14 @@
                     <label for="destino">* Destino</label>
                     <select name="destino" id="destino" class="form-select" required="">
                       <option value="">Selecciona tu destino</option>
-                      <option value="mazatlan">Mazatlán</option>
-                      <option value="vallarta">Puerto Vallarta</option>
-                      <option value="loscabos">Los Cabos</option>
-                      <option value="cancun">Cancún</option>
+                      <option value="Mazatlán">Mazatlán</option>
+                      <option value="Puerto Vallarta">Puerto Vallarta</option>
+                      <option value="Los Cabos">Los Cabos</option>
+                      <option value="Cancún">Cancún</option>
+                      <option value="Tulum">Tulum</option>
+                      <option value="Puerto Escondido">Puerto Escondido</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Caribe Mexicano">Caribe Méxicano</option>
                        
                     </select>
                   </div>
@@ -327,7 +331,7 @@
     </section><!-- /Nosotros -->
 
     <!-- DESTINOS -->
-    <section id="featured-destinations" class="featured-destinations section">
+   <section id="featured-destinations" class="featured-destinations section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -337,102 +341,129 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row">
+        <!-- CUADRÍCULA DE DESTINOS -->
+        <div class="row g-4">
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="featured-destination">
-              <div class="destination-overlay">
-                <img src="assets/img/travel/mazatlan.webp" alt="Tropical Paradise" class="img-fluid">
-                <div class="destination-info">
-                  <span class="destination-tag">Popular</span>
-                  <h3>Mazatlán</h3>
-                  <p style="font-size: 20px;" class="location"><i class="bi bi-geo-alt-fill"></i> Sinaloa, México</p>
-                  <p style="font-size: 20px;" class="description">Mazatlán es un destino turístico que lo tiene todo, sol, playa, cultura, naturaleza y exquisita gastronomía.</p>
-                  <div class="destination-meta">
-                    <!-- <div class="tours-count">
-                      <i class="bi bi-collection"></i>
-                      <span>22 Packages</span>
-                    </div> -->
-                    <!-- <div class="rating">
-                      <i class="bi bi-star-fill"></i>
-                      <span>4.9 (412)</span>
-                    </div> -->
-                  </div>
-                  <!-- <div class="price-info">
-                    <span class="starting-from">Starting from</span>
-                    <span class="amount">$2,150</span>
-                  </div> -->
-                  <a href="mazatlan.html" class="explore-btn">
-                     <span>Ver Detalles</span> 
-                     <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
+          <!-- Mazatlán -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="destination-card h-100">
+              <div class="destination-image-top">
+                <img src="assets/img/travel/mazatlan.webp" alt="Mazatlán" class="img-fluid">
+                <div class="badge-offer">Popular</div>
+              </div>
+              <div class="destination-content">
+                <h4>Mazatlán</h4>
+                <p class="location"><i class="bi bi-geo-alt"></i> Sinaloa, México</p>
+                <p class="brief">Mazatlán es un destino turístico que lo tiene todo, sol, playa, cultura, naturaleza y exquisita gastronomía.</p>
+                <a href="mazatlan.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="row g-3">
-
-              <div class="col-12" data-aos="fade-left" data-aos-delay="300">
-                <div class="compact-destination">
-                  <div class="destination-image">
-                    <img src="assets/img/travel/puertoVallarta.jpeg" alt="Mountain Adventure" class="img-fluid">
-                    <!-- <div class="badge-offer">Best Value</div> -->
-                  </div>
-                  <div class="destination-details">
-                    <h4>Puerto Vallarta</h4>
-                    <p class="location"><i class="bi bi-geo-alt"></i> Jalisco, México</p>
-                    <p  class="brief">Es conocido por su encanto colonial, su malecón pintoresco, playas doradas y vibrante vida cultural.</p>
-                    <!-- <div class="stats-row">
-                      <span class="tour-count"><i class="bi bi-calendar-check"></i> 16 Tours</span>
-                      <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
-                      <span class="price">from $1,420</span>
-                    </div> -->
-                    <a href="puertovallarta.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a>
-                  </div>
-                </div>
+          <!-- Puerto Vallarta -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="destination-card h-100">
+              <div class="destination-image-top">
+                <img src="assets/img/travel/puertoVallarta.jpeg" alt="Puerto Vallarta" class="img-fluid">
               </div>
-
-              <div class="col-12" data-aos="fade-left" data-aos-delay="400">
-                <div class="compact-destination">
-                  <div class="destination-image">
-                    <img src="assets/img/travel/loscabos.jpg" alt="Cultural Heritage" class="img-fluid">
-                  </div>
-                  <div class="destination-details">
-                    <h4>Los Cabos</h4>
-                    <p  class="location"><i class="bi bi-geo-alt"></i> Baja California Sur, México</p>
-                    <p  class="brief">Es famoso por sus paisajes desérticos junto al mar, el icónico Arco del Fin del Mundo y su lujo turístico.</p>
-                    <div class="stats-row">
-                      <!-- <span class="tour-count"><i class="bi bi-calendar-check"></i> 9 Expeditions</span>
-                      <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
-                      <span class="price">from $980</span> -->
-                    </div>
-                    <a href="loscabos.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a>
-                  </div>
-                </div>
+              <div class="destination-content">
+                <h4>Puerto Vallarta</h4>
+                <p class="location"><i class="bi bi-geo-alt"></i> Jalisco, México</p>
+                <p class="brief">Es conocido por su encanto colonial, su malecón pintoresco, playas doradas y vibrante vida cultural.</p>
+                <a href="puertovallarta.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a>
               </div>
+            </div>
+          </div>
 
-              <div class="col-12" data-aos="fade-left" data-aos-delay="500">
-                <div class="compact-destination">
-                  <div class="destination-image">
-                    <img src="assets/img/travel/cancun2.webp" alt="Safari Experience" class="img-fluid">
-                    <!-- <div class="badge-offer limited">Limited Spots</div> -->
-                  </div>
-                  <div class="destination-details">
-                    <h4>Cancún</h4>
-                    <p  class="location"><i class="bi bi-geo-alt"></i> Quintana Roo, México</p>
-                    <p  class="brief">Es mundialmente famoso por sus playas de arena blanca, aguas turquesa y su animada vida nocturna.</p>
-                    <div class="stats-row">
-                      <!-- <span class="tour-count"><i class="bi bi-calendar-check"></i> 11 Safaris</span>
-                      <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
-                      <span class="price">from $2,750</span> -->
-                    </div>
-                    <a href="cancun.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a>
-                  </div>
-                </div>
+          <!-- Los Cabos -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="destination-card h-100">
+              <div class="destination-image-top">
+                <img src="assets/img/travel/loscabos.jpg" alt="Los Cabos" class="img-fluid">
               </div>
+              <div class="destination-content">
+                <h4>Los Cabos</h4>
+                <p class="location"><i class="bi bi-geo-alt"></i> Baja California Sur, México</p>
+                <p class="brief">Es famoso por sus paisajes desérticos junto al mar, el icónico Arco del Fin del Mundo y su lujo turístico.</p>
+                <a href="loscabos.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
 
+          <!-- Cancún -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="destination-card h-100">
+              <div class="destination-image-top">
+                <img src="assets/img/travel/cancun2.webp" alt="Cancún" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h4>Cancún</h4>
+                <p class="location"><i class="bi bi-geo-alt"></i> Quintana Roo, México</p>
+                <p class="brief">Es mundialmente famoso por sus playas de arena blanca, aguas turquesa y su animada vida nocturna.</p>
+                <a href="cancun.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Puerto Escondido -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="destination-card h-100">
+              <div class="destination-image-top">
+                <img src="assets/img/travel/PUERTO ESCONDIDO-1.jpg" alt="Puerto Escondido" class="img-fluid">
+                <div class="badge-offer">Recomendado</div>
+              </div>
+              <div class="destination-content">
+                <h4>Puerto Escondido</h4>
+                <p class="location"><i class="bi bi-geo-alt"></i> Oaxaca, México</p>
+                <p class="brief">Paraíso bohemio conocido por sus olas de clase mundial, ambiente relajado y hermosas puestas de sol.</p>
+                <!-- <a href="puerto_escondido.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Colombia -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="destination-card h-100">
+              <div class="destination-image-top">
+                <img src="assets/img/travel/COLOMBIA-1.jpeg" alt="Colombia" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h4>Tour por Colombia</h4>
+                <p class="location"><i class="bi bi-geo-alt"></i> Playa Blanca, Buritaca, Cartagena, Castillo S. Felipe</p>
+                <p class="brief">Vive la magia colombiana desde playas caribeñas hasta la historia colonial de Cartagena, con fiesta, cultura y paisajes inolvidables.</p>
+                <!-- <a href="colombia.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Acapulco -->
+          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="destination-card h-100">
+              <div class="destination-image-top">
+                <img src="assets/img/travel/acapulco.jpg" alt="Acapulco" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h4>Acapulco</h4>
+                <p class="location"><i class="bi bi-geo-alt"></i> Guerrero, México</p>
+                <p class="brief">Legendario puerto con playas icónicas, espectaculares clavadistas de La Quebrada y vibrante vida nocturna.</p>
+                <a href="acapulco.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Tulum -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+            <div class="destination-card h-100">
+              <div class="destination-image-top">
+                <img src="assets/img/travel/TULUM-1.jpg" alt="Tulum" class="img-fluid">
+                <div class="badge-offer">Místico</div>
+              </div>
+              <div class="destination-content">
+                <h4>Tulum</h4>
+                <p class="location"><i class="bi bi-geo-alt"></i> Quintana Roo, México</p>
+                <p class="brief">Ruinas mayas frente al mar Caribe, playas paradisíacas, cenotes sagrados y una atmósfera bohemia única.</p>
+                <!-- <a href="rivieramaya.html" class="quick-link">Ver Detalles <i class="bi bi-chevron-right"></i></a> -->
+              </div>
             </div>
           </div>
 
@@ -441,6 +472,132 @@
       </div>
 
     </section>
+
+    <style>
+    /* Estilos para las tarjetas de destinos con imagen arriba */
+    .destination-card {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .destination-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .destination-image-top {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .destination-image-top img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .destination-card:hover .destination-image-top img {
+      transform: scale(1.1);
+    }
+
+    .destination-image-top .badge-offer {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: rgba(255, 255, 255, 0.95);
+      color: #333;
+      padding: 6px 15px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      z-index: 2;
+    }
+
+    .destination-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .destination-content h4 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .destination-content .location {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .destination-content .location i {
+      color: #e74c3c;
+      font-size: 16px;
+    }
+
+    .destination-content .brief {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+
+    .destination-content .quick-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #3498db;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: auto;
+    }
+
+    .destination-content .quick-link:hover {
+      color: #2980b9;
+      gap: 12px;
+    }
+
+    .destination-content .quick-link i {
+      transition: transform 0.3s ease;
+    }
+
+    .destination-content .quick-link:hover i {
+      transform: translateX(4px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .destination-image-top {
+        height: 200px;
+      }
+
+      .destination-content h4 {
+        font-size: 20px;
+      }
+
+      .destination-content .brief {
+        font-size: 14px;
+      }
+    }
+    </style>
     <!-- /DESTINOS -->
 
     <!-- Featured Tours Section -->

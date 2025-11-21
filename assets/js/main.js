@@ -184,15 +184,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('formCotizacion').addEventListener('submit', function (e) {
     e.preventDefault();    
 
-    const nombres = {
-      mazatlan: "Mazatlán",
-      cancun: "Cancún",
-      loscabos: "Los Cabos",
-      vallarta: "Puerto Vallarta"
-    };
+   
     const nombre = document.getElementById('nombre').value.trim();
     const telefono = document.getElementById('telefono').value.trim();
     const destino = document.getElementById('destino').value;
+    //console.log("destino seleccionado:",destino);
     const tipo = document.getElementById('tipo').value;
     const adultos = document.getElementById('adultos').value;
     const menores = document.getElementById('menores').value || 0;
@@ -206,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    let mensaje = `¡Hola! Soy ${nombre}, mi teléfono es ${telefono}. Deseo cotizar un viaje a ${nombres[destino]}.\n\n`;
+    let mensaje = `¡Hola! Soy ${nombre}, mi teléfono es ${telefono}. Deseo cotizar un viaje a ${destino}.\n\n`;
     mensaje += `- Tipo de paquete: ${tipo}\n- Adultos: ${adultos}`;
 
     if (parseInt(menores) > 0) {
